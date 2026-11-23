@@ -1,0 +1,11 @@
+node_modules/
+dist/
+tools/python/
+tools/frames/
+test-results/
+*.log
+tools/reference.jpg
+tools/*.png
+*.tsbuildinfo
+invitation-source.zip
+outputs/
