@@ -35,15 +35,15 @@ function App(){
  return <>{!opened&&<div className="gate" ref={gate}>
   <div className="gate-panel panel-left"><Art name="floral" className="gate-flower"/></div>
   <div className="gate-panel panel-right"><Art name="floral" className="gate-flower"/></div>
-  <div className="gate-copy"><span className="eyebrow">ME DASHURI, PËR JU</span><p>Një ftesë vetëm për ju</p></div>
+  <div className="gate-copy"><span className="eyebrow"></span><p>Një ftesë për ju</p></div>
   <div className="ribbon"><Art name="bow"/></div>
   <button className="seal" onClick={open} disabled={opening} aria-label="Hap ftesën e dasmës"><span>{w.names[0][0]}<span className="seal-and">&</span>{w.names[1][0]}</span><small>{w.displayDate}</small></button>
   <p className="gate-hint" role="status">{opening?'Një histori dashurie po hapet…':'Prekni vulën për ta hapur'}<span>{w.names.join(' & ').toUpperCase()}</span></p>
  </div>}
  <main ref={main} tabIndex={-1} inert={!opened} aria-hidden={!opened}>
- <header className="hero"><Art name="hero" className="hero-art"/><div className="hero-copy"><span className="eyebrow">ME GËZIM NË ZEMËR</span><p className="hero-kicker">PO MARTOHEMI</p><h1>{w.names[0]}<span>&</span>{w.names[1]}</h1><Branch/><p className="hero-date">{w.displayDate}</p><p className="eyebrow">{w.city}</p><p className="hero-note">Dhe nuk do të ishte e njëjta gjë pa ju.</p></div><a className="scroll-cue" href="#countdown" aria-label="Zbuloni ftesën">ZBULONI HISTORINË TONË<span>⌄</span></a></header>
+ <header className="hero"><Art name="hero" className="hero-art"/><div className="hero-copy"><span className="eyebrow"></span><p className="hero-kicker"></p><h1>{w.names[0]}<span>&</span>{w.names[1]}</h1><Branch/><p className="hero-date">{w.displayDate}</p><p className="eyebrow">{w.city}</p><p className="hero-note"></p></div></header>
  <div className="invitation-note"><Branch/><p>Ka çaste që bëhen kujtime.<br/>Ka njerëz që i bëjnë ato të paharrueshme.</p><span className="eyebrow">JU FTOJMË TË JENI PJESË E DITËS SONË</span></div>
- <Section id="countdown" eyebrow="DREJT PËRGJITHMONËS" title="Numërimi mbrapsht"><Countdown/><p className="soft-text">Çdo sekondë na sjell më pranë jush.</p></Section>
+ <Section id="countdown" eyebrow="" title="Numërimi mbrapsht"><Countdown/><p className="soft-text"></p></Section>
  <Section id="venue" eyebrow="TAKOHEMI KËTU" title="Ku & kur" className="venue-section"><div className="venue-card"><Art name="venue" alt="Ambienti i sallës së dasmës"/><span className="eyebrow">NJË VEND PËR KUJTIME TË BUKURA</span><h3>{w.venue.name}</h3><p>{w.venue.address}</p><p className="soft-text">{w.venue.addressNote}</p><div className="venue-date"><span>{new Intl.DateTimeFormat('sq-AL',{day:'numeric',month:'long',year:'numeric',timeZone:w.timeZone}).format(new Date(w.date)).toUpperCase()}</span><i/> <span>ORA {new Intl.DateTimeFormat('sq-AL',{hour:'2-digit',minute:'2-digit',hour12:false,timeZone:w.timeZone}).format(new Date(w.date))}</span></div><div className="button-row"><a className="button" href={w.venue.mapUrl} target="_blank" rel="noreferrer">Hape në hartë</a><button className="button outline" onClick={calendar}>Shto në kalendar</button></div></div></Section>
  <footer><Art name="arch" alt="Hark dasme me lule të bardha dhe degë ulliri"/><p className="eyebrow">MEZI PRESIM TË FESTOJMË ME JU</p><p className="footer-names">{w.names.join(' & ')}</p><p className="hero-date">{w.displayDate}</p><Branch/><small>Me dashuri, për një fillim të bukur.</small></footer>
  </main></>;

@@ -1,6 +1,6 @@
 export const wedding = {
  names: ['Melsiana', 'Amarildo'], date: '2026-12-26T19:00:00+01:00', endDate: '2026-12-27T02:00:00+01:00', timeZone: 'Europe/Tirane', displayDate: '26 · 12 · 2026', city: 'TIRANË',
- venue: { name: 'Serenata Korcare Tirane', address: 'Tiranë, Shqipëri', addressNote: 'Adresa e plotë Mullet, Tirana 1001, Albania.', mapUrl: 'https://www.google.com/maps/search/?api=1&query=Serenata+Korcare+Tirane' },
+ venue: { name: 'Serenata Korcare Tirane', address: 'Tiranë, Shqipëri', addressNote: 'Adresa e plotë Mullet, Tirana 1001, Albania.', mapUrl: 'https://www.google.com/maps/place/Serenata+Korcare+Resort/@41.2631999,19.8632908,847m/data=!3m1!1e3!4m20!1m10!3m9!1s0x135039bf50265799:0xc7519e28d4b4b70b!2sSerenata+Korcare+Resort!5m2!4m1!1i2!8m2!3d41.2631959!4d19.8658657!16s%2Fg%2F11rzlf1k20!3m8!1s0x135039bf50265799:0xc7519e28d4b4b70b!5m2!4m1!1i2!8m2!3d41.2631959!4d19.8658657!16s%2Fg%2F11rzlf1k20?entry=ttu&g_ep=EgoyMDI2MTExOC4xIKXMDSoASAFQAw%3D%3D' },
  audio: '', submissionUrl: '', rsvpDeadline: '10 dhjetor 2026',
  assets: { hero: '/assets/hero.webp', dancing: '/assets/dancing.webp', venue: '/assets/ambient.jpeg', floral: '/assets/floral.webp', bow: '/assets/bow.webp', clothing: '/assets/clothing.webp', gift: '/assets/gift.webp', arch: '/assets/arch.webp' },
  story: [
